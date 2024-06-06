@@ -1,4 +1,5 @@
 package ru.netology.game;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +39,7 @@ public class Game {
 
     public Player findPlayerByName(String name) {
         for (Player player : registeredPlayers) {
-            if (player.getName() == name) {
+            if (player.getName().equals(name)) {
                 return player;
             }
         }
